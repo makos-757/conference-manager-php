@@ -3,7 +3,7 @@
 **Application Programming for the Internet – Academic Group Project**
 
 **Framework:** Laravel 12 (PHP)
-**Database:** SQLite (default) / MySQL (optional)
+**Database:** MySQL
 **Frontend:** Laravel Blade, HTML, CSS and JavaScript
 **Development Environment:** XAMPP, Composer and Visual Studio Code
 **Version Control:** Git and GitHub
@@ -42,7 +42,7 @@
 
 The application provides a centralized platform for organising academic conferences, workshops, seminars and professional events. It enables conference organisers to manage conferences, venues, sessions and speakers while allowing attendees to browse available conferences, register for sessions and record their attendance.
 
-The system uses a relational database (SQLite by default, MySQL optional) to store and manage information. Laravel handles application routing, database operations, authentication, authorization, validation and business logic. The frontend uses Laravel Blade templates with HTML, CSS and JavaScript.
+The system uses a relational database (MySQL) to store and manage information. Laravel handles application routing, database operations, authentication, authorization, validation and business logic. The frontend uses Laravel Blade templates with HTML, CSS and JavaScript.
 
 ---
 
@@ -92,7 +92,7 @@ This is a modest academic application. The team will avoid introducing unnecessa
 | Feature | Status |
 |---|---|
 | Laravel 12 installation | Completed |
-| SQLite database configuration | Completed |
+| MySQL database configuration | Completed |
 | Default users migration (users, password_reset_tokens, sessions) | Completed |
 | Basic welcome page (Blade view) | Completed |
 | Example unit and feature tests | Completed |
@@ -169,7 +169,7 @@ The application will implement four user roles. Access restrictions must be enfo
 | Markup | HTML5 |
 | Styling | CSS3 |
 | Client-side Interaction | JavaScript |
-| Database | SQLite (default) / MySQL (optional) |
+| Database | MySQL |
 | Database Administration | phpMyAdmin (for MySQL) |
 | ORM | Laravel Eloquent ORM |
 | Routing | Laravel Routing |
@@ -194,7 +194,7 @@ Before running the project, install:
 - PHP 8.2 or higher, compatible with Laravel 12.
 - Composer.
 - XAMPP (for MySQL and Apache) or PHP built-in server.
-- MySQL (optional; SQLite works out of the box).
+- MySQL (required).
 - Git.
 - Visual Studio Code.
 - Node.js and npm (only if compiling Vite frontend assets).
@@ -243,7 +243,7 @@ php artisan key:generate
 
 ## 8.4 Create the Database
 
-The default database is SQLite. No additional setup is required.
+The default database is MySQL. Configure your `.env` file with the MySQL connection details.
 
 To use MySQL instead, start Apache and MySQL in XAMPP, then create a database:
 
@@ -311,7 +311,7 @@ composer run setup
 
 # 9. Database Configuration
 
-The application uses SQLite by default. MySQL is optional.
+The application uses MySQL. SQLite is not used.
 
 ## Current Database Tables
 
@@ -726,7 +726,7 @@ The project includes default Laravel testing infrastructure:
 php artisan test
 ```
 
-The test environment uses an in-memory SQLite database (see `phpunit.xml`), so tests will not modify the development database.
+The test environment uses an in-memory SQLite database (see `phpunit.xml`), so tests will not modify the development MySQL database.
 
 ## Planned Test Cases
 
@@ -875,7 +875,7 @@ The project has eight members. To ensure everyone contributes meaningfully, the 
 ## What Exists
 
 - Fresh Laravel 12 installation with all default files.
-- SQLite database configured by default.
+- MySQL database configured for the project.
 - Default users migration with `users`, `password_reset_tokens` and `sessions` tables.
 - Default welcome Blade view.
 - Default unit and feature test examples.
