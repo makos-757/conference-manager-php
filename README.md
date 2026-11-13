@@ -251,7 +251,7 @@ To use MySQL instead, start Apache and MySQL in XAMPP, then create a database:
 http://localhost/phpmyadmin
 ```
 
-Create a database named `convene_db` using the `utf8mb4` character set.
+Create a database named `conference-manager_db` using the `utf8mb4` character set.
 
 ## 8.5 Configure Database Connection (MySQL)
 
@@ -267,7 +267,7 @@ APP_URL=http://localhost:8000
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=convene_db
+DB_DATABASE=conference-manager_db
 DB_USERNAME=root
 DB_PASSWORD=
 ```
