@@ -203,7 +203,11 @@ Open [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
 ## License
 
-Released under the [MIT License](LICENSE) — free to use, modify and distribute, for learning or real development.
+Released under the [MIT License](LICENSE).
+
+## Permission
+
+Permission to use, modify and redistribute this project — for learning or for real development — is granted by the author, Makos Tech (Samuel Makokha). Attribution is optional: you may credit the author or not, as you prefer.
 
 ## Contact and support
 
