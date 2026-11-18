@@ -201,6 +201,10 @@ Open [http://127.0.0.1:8000](http://127.0.0.1:8000).
 | `resources/views` | Blade templates (layout, navigation, sidebar, screens) |
 | `routes/web.php` | Application routes |
 
+## License
+
+Released under the [MIT License](LICENSE) — free to use, modify and distribute, for learning or real development.
+
 ## Contact and support
 
 Questions, issues or need help setting it up? Reach us at [makostech.me/contact](https://makostech.me/contact).
